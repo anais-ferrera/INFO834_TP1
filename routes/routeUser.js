@@ -106,7 +106,8 @@ router.get('/', passport.authenticate('jwt'), function (req, res){
 });
 
   router.get('*', function(req, res){
-    res.send('ERREUR 404', 404); 
+    //res.send('ERREUR 404', 404); 
+    res.status(404).send('ERREUR 404');
   });
 
 

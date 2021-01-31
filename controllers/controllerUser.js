@@ -69,6 +69,7 @@ function readUsers(req, res) {
     });
  }
 
+
 module.exports.read = readUser;
 module.exports.reads = readUsers;
 module.exports.create = createUser;
